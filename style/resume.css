@@ -1,7 +1,12 @@
-h1 { 
+body {
+    width: 8in;
+    word-break: keep-all;
+}
+
+h1 {
     text-align: center;
 }
 
-p {
-    word-wrap: break-word;
+#header {
+    text-align: center;
 }
