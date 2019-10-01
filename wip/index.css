@@ -5,80 +5,66 @@ body {
 
 div {
     position: absolute;
-
-}
-.twitter {
     font-size: 48px;
+}
+
+.twitter {
     color: #1DA1F2;
 }
 
 .facebook {
-    font-size: 48px;
-    color: #3C5A99; 
+    color: #3C5A99;
 }
 
 .twitch {
-    font-size: 48px;
     color: #7b68ee;
-      
+
 }
 
 .youtube {
-    font-size: 48px;
     color: #FF0000;
 }
 
 .xbox {
-    font-size: 48px;
     color: #107C10;
 }
 
 .playstation {
-    font-size: 48px;
     color: #003087;
 }
 
 .steam {
-    font-size: 48px;
     color: #000000;
 }
 
 .github {
-    font-size: 48px;
     color: #6e5494;
 }
 
 .discord {
-    font-size: 48px;
     color: #7289da;
 }
 
 .instagram {
-    font-size: 48px;
     color: #5851db;
 }
 
 .android {
-    font-size: 48px;
     color: #78C257;
 }
 
 .apple {
-    font-size: 48px;
     color: #A3AAAE;
 }
 
 .windows {
-    font-size: 48px;
     color: #00A4EF;
 }
 
 .linux {
-    font-size: 48px;
     color: #000000;
 }
 
 .linkedin {
-    font-size: 48px;
     color: #0077B5;
 }
