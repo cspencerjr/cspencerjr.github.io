@@ -3,7 +3,7 @@ body {
     padding: 0%;
 }
 
-div #brand-icons {
+#brand-icons {
     position: absolute;
     font-size: 32px;
 }
