@@ -4,7 +4,7 @@ var canvas, ctx, width, height;
 var ballArray = [];
 
 function init() {
-    canvas = document.querySelector("#myCanvas");
+    canvas = document.querySelector("#gameSpace");
     ctx = canvas.getContext('2d');
     width = canvas.width;
     height = canvas.height;
@@ -17,7 +17,6 @@ function init() {
 
 function createBalls(numberOfBalls) {
     for (var i = 0; i < numberOfBalls; i++) {
-
         // Create a ball with random position and speed. 
         // You can change the radius
         var ball = new Ball(width * Math.random(),
@@ -98,4 +97,3 @@ function Ball(x, y, angle, v, diameter) {
         this.y += this.v * Math.sin(this.angle);
     };
 }
-
