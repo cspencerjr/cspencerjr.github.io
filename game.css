@@ -1,0 +1,14 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+#GameSpace {
+    display: block;
+    background: black;
+    border: 5px solid blue;
+    width: 640px;
+    height: 480px;
+    margin: 1%;
+    padding: 1%;
+}
