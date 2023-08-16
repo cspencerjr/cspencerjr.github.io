@@ -1,6 +1,13 @@
 /* eslint no-console:0 consistent-return:0 */
 "use strict";
 
+function loadShaderFile(name) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("GET", name, false);
+  xmlHttp.send();
+  return xmlHttp.responseText;
+}
+
 function createShader(gl, type, source) {
   var shader = gl.createShader(type);
   gl.shaderSource(shader, source);
@@ -37,13 +44,8 @@ function main() {
   }
 
   // Get the strings for our GLSL shaders
-  var xmlHttp = new XMLHttpRequest();
-  xmlHttp.open("GET", "shaders/shader.vert", false);
-  xmlHttp.send();
-  var vertexShaderSource = xmlHttp.responseText;
-  xmlHttp.open("GET", "shaders/shader.frag", false);
-  xmlHttp.send();
-  var fragmentShaderSource = xmlHttp.responseText;
+  var vertexShaderSource = loadShaderFile("shaders/shader.vert");
+  var fragmentShaderSource = loadShaderFile("shaders/shader.frag");
 
   // create GLSL shaders, upload the GLSL source, compile the shaders
   var vertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
